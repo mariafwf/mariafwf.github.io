@@ -16,6 +16,19 @@ body {
     padding: 30px;
 }
 
+#title {
+    float: left;
+    width: 50%;
+}
+
+#menu {
+    font-size: 10px;   
+    font-weight: bold;
+    text-decoration: underline;
+    float: right;
+    width: 50%;
+}
+
 h1 {
     font-size: 45px;   
     font-weight: bold;
