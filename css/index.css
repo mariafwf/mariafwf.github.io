@@ -1,0 +1,29 @@
+@font-face {
+    font-family: 'Nexa';
+    src: url(/fonts/nexa.otf);
+}
+
+body {
+    background-color: #f1ede8;
+    font-family: 'Nexa', sans-serif;
+    color: #2b2b2b;
+    letter-spacing: 0px;
+}
+
+#header {
+    align-items: center;
+    text-align: center;
+    padding: 30px;
+}
+
+h1 {
+    font-size: 45px;   
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+h3 {
+    font-size: 15px;
+    font-weight: bold; 
+
+}
