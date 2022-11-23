@@ -1,0 +1,17 @@
+@font-face {
+    font-family: 'Nexa';
+    src: url(/fonts/nexa.ttf);
+}
+
+body {
+    background-color: #f3e9dd;
+    font-family: 'Nexa', sans-serif;
+    color: #2b2b2b;
+    letter-spacing: 0px;
+}
+
+.parent {
+    width: 95vw;
+    height: 95vh;
+    position: relative;
+}
