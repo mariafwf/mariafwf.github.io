@@ -8,21 +8,22 @@
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
-    <div id="container">
+    <div class="parent">
       <div class="info">
-        <div class="title">
-          <span>Some</span>
-          <span>Book</span>
-          <span>Quotes</span>
-          <h3>By Maria Figueiredo. 50% book nerd, 50% CS nerd.</h3>
+        <div class="container title">
+          <div><span>Some</span></div>
+          <div><span>Book</span></div>
+          <div><span>Quotes</span></div>
         </div>
-        <div class="menu">
-          <a href="/html/blog.html">Blog</a>
-          <a href="/html/home.html">About</a>
+        <div class="container menu">
+          <div class="menu-item"><a class="button" href="/html/blog.html">Blog</a></div>
+          <div class="menu-item"><a class="button" href="/html/home.html">About</a></div>
+          <div class="name"><span>By Maria Figueiredo</span></div>
+          <div class="description"><span>50% book nerd, 50% CS nerd</span></div>
         </div>
+        <hr>
       </div>
     </div>
-
     <script src="js/index.js" async defer></script>
   </body>
 </html>

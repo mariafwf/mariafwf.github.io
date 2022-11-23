@@ -10,39 +10,91 @@ body {
     letter-spacing: 0px;
 }
 
-#container {
+.parent {
+    width: 95vw;
+    height: 95vh;
+    position: relative;
+}
+
+.container {
     align-items: center;
     text-align: center;
     padding: 30px;
     position: relative;
-    width: 100vw;
-    display: block;}
+}
 
 .info {
     position: absolute;
+    top: 30%;
+    left: 20%;
+    vertical-align: middle;
+    width: 60%;
 }
 
 .title {
     float: left;
-    width: 50%;
+    text-align: right;
+    width: 43%;
 }
 
 .menu {
     font-size: 30px;   
     font-weight: bold;
-    text-decoration: underline;
     float: right;
-    width: 50%;
+    width: 43%;
+    text-align: left;
 }
 
-.title > span {
+.menu-item {
+    margin-top: 30px
+}
+
+.name {
+    margin-top: 40px;
+    font-size: 30px; 
+}
+
+.description {
+    font-size: 20px;
+    margin-top: 5px;
+}
+
+.title > div > span {
     font-size: 80px;   
-    font-weight: bold;
-    margin-bottom: 10px;
+    font-weight: 900;
+    letter-spacing: 0px;
 }
 
-h3 {
-    font-size:20px;
-    font-weight: bold; 
+hr {
+    border-top: 12px solid #2b2b2b;
+    width: 80%;
+}
 
+.button {
+    background-color: #222;
+    border-radius: 4px;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.5;
+    max-width: 40%;
+    min-height: 44px;
+    min-width: 10px;
+    outline: none;
+    overflow: hidden;
+    padding: 9px 20px 8px;
+    position: relative;
+    text-align: center;
+    touch-action: manipulation;
+    width: 100%;
+    color: #f1ede8;
+    text-decoration: none;
+}
+
+.button:hover,
+.button:focus {
+  opacity: .85;
 }
