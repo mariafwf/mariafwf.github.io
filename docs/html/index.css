@@ -6,11 +6,11 @@ body {
 }
 
 .parent {
-    text-align: center;
+    text-align: left;
     width: 95vw;
     height: 95vh;
     position: relative;
-    font-size: 25px;   
+    font-size: 18px;   
     font-weight: 900;
     letter-spacing: 0px;
     margin-top: 30px;
@@ -19,7 +19,8 @@ body {
 
 hr {
     border-top: 4px solid #2b2b2b;
-    width: 500px;
+    width: 260px;
+    margin-left: 0;
     margin-top: 0;
 }
 
@@ -63,6 +64,28 @@ hr {
     padding: 15px;
 }
 
+.intro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 100px;
+}
+
+img {
+    width: 292.5px;
+    height: 376.25px;
+    box-shadow: #2b2b2b 0px 5px 5px;
+}
+
+.image {
+    flex-basis: 40%;
+}
+  
+.text {
+    font-size: 20px;
+    padding-left: 20px;
+}
+
 .hyperspan
 {
     opacity: 0;
@@ -77,4 +100,9 @@ hr {
 .button:hover,
 .button:focus {
   opacity: .85;
+}
+
+a {
+    text-decoration: none;
+    color: #2b2b2b;
 }
