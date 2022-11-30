@@ -5,6 +5,7 @@ MARKDOWN=$(shell find . -iname "*.md")
 HTML=$(MARKDOWN:.md=.html)
 
 .PHONY = all tar clean
+
 all: $(HTML)
 
 %.html: %.md
@@ -13,7 +14,6 @@ all: $(HTML)
 clean:
 	rm $(HTML)
 
-commit:
+commit: all
 	git add -A .
 	git commit -m 'Added markdown file $(MARKDOWN)'
-	pandoc --from markdown --to html $< -o $@
