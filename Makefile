@@ -17,3 +17,4 @@ clean:
 commit: all
 	git add -A .
 	git commit -m 'Added entry $(MARKDOWN)'
+	rm $(MARKDOWN)
