@@ -1,10 +1,8 @@
-# Find all markdown files
 MARKDOWN=$(shell find . -iname "*.md")
 
-# Form all 'html' counterparts
 HTML=$(MARKDOWN:.md=.html)
 
-.PHONY = all tar clean
+.PHONY = all clean new
 
 all: $(HTML)
 
@@ -18,3 +16,4 @@ commit: all
 	git add -A .
 	git commit -m 'Added entry $(MARKDOWN)'
 	rm $(MARKDOWN)
+
