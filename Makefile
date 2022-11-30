@@ -16,4 +16,4 @@ clean:
 
 commit: all
 	git add -A .
-	git commit -m 'Added markdown file $(MARKDOWN)'
+	git commit -m 'Added entry $(MARKDOWN)'
