@@ -13,7 +13,8 @@ clean:
 	rm $(HTML)
 
 commit: all
+	rm $(MARKDOWN)
 	git add -A .
 	git commit -m 'Added entry $(MARKDOWN)'
-	rm $(MARKDOWN)
+	mv $(HTML) /entries
 
