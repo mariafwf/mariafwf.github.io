@@ -15,7 +15,7 @@ clean:
 commit: all
 #	rm $(MARKDOWN)
 	git add -A .
-	git commit -m 'Added entry $(MARKDOWN)'
+	git commit -m 'Added $(basename $(MARKDOWN))'
 	
 NEWENTRY:=(<div class="entry"><a href="entries/littlelife.html"><span class="hyperspan"></span></a><span>A Little Life</span><br /><br /><span>by Hanya Yanagihara</span></div></div>)
 
