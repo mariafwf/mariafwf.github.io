@@ -13,14 +13,12 @@ clean:
 	rm $(HTML)
 
 commit: all
-	rm $(MARKDOWN)
+#	rm $(MARKDOWN)
 	git add -A .
 	git commit -m 'Added entry $(MARKDOWN)'
 	
-DIR :=
+NEWENTRY:=(<div class="entry"><a href="entries/littlelife.html"><span class="hyperspan"></span></a><span>A Little Life</span><br /><br /><span>by Hanya Yanagihara</span></div></div>)
 
-entry:
-	for file in ./entries ; do \
-		echo "Hello" $${file} ; \
-	done
+append:
+	NEWENTRY >> index.html
 
