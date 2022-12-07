@@ -14,12 +14,12 @@ body {
 
 h1 {
     margin-bottom: 10px;
+    font-size: 40px;
 }
 
-hr {
-    border-top: 4px solid #2b2b2b;
-    width: 240px;
-    margin-top: 0;
+h2 {
+    font-size: 20px;
+    margin: 1px;
 }
 
 .button {
@@ -43,7 +43,9 @@ hr {
     text-decoration: none;
 }
 
-.container {
+
+ul {
+    list-style-type: none;
     position: relative;
     margin-top: 50px;
     align-items: center;
@@ -51,13 +53,15 @@ hr {
     text-align: center;
 }
 
-.entry {
+li {
     position: relative;
     background-color: #f4efeb;
     border: #2b2b2b;
     border-radius: 0.5em;
     margin: 30px 300px;
     padding: 15px;
+    font-size: 20px;
+    font-weight: 400px;
 }
 
 .intro {
@@ -77,24 +81,8 @@ hr {
     flex-basis: 40%;
 }
   
-.text {
-    font-size: 20px;
-    padding-left: 20px;
-}
-
-.hyperspan
-{
-    opacity: 0;
-    position:absolute;
-    width: 100%;
-    height: 100%;
-    left: 0;
-    top: 0;
-    z-index: 1;
-}
-
-.button:hover,
-.button:focus {
+a:hover,
+a:focus {
   opacity: .85;
 }
 
