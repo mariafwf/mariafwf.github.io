@@ -6,21 +6,23 @@ body {
 }
 
 .parent {
-    text-align: left;
+    text-align: center;
     width: 95vw;
     height: 95vh;
     position: relative;
     font-size: 18px;   
     font-weight: 900;
-    letter-spacing: 0px;
     margin-top: 30px;
     margin-left: 15px;
+}
+
+h1 {
+    margin-bottom: 10px;
 }
 
 hr {
     border-top: 4px solid #2b2b2b;
     width: 240px;
-    margin-left: 0;
     margin-top: 0;
 }
 
@@ -28,7 +30,6 @@ hr {
     background-color: #222;
     border-radius: 4px;
     box-sizing: border-box;
-    color: #fff;
     cursor: pointer;
     display: inline-block;
     font-size: 16px;
@@ -38,7 +39,6 @@ hr {
     min-height: 44px;
     min-width: 10px;
     outline: none;
-    overflow: hidden;
     padding: 9px 20px 8px;
     position: relative;
     text-align: center;
@@ -105,48 +105,4 @@ hr {
 a {
     text-decoration: none;
     color: #2b2b2b;
-}
-
-.book-info {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 100px;
-}
-
-.cover {
-    margin-left: 40px;
-}
-
-.cover > img {
-    max-width: 100px;
-    max-height: 150px;
-    box-shadow: #2b2b2b 0px 5px 5px;
-}
-
-.back-button {
-    background-color: #222;
-    border-radius: 4px;
-    box-sizing: border-box;
-    color: #fff;
-    cursor: pointer;
-    display: inline-block;
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 1.5;
-    max-width: 150px;
-    height: 44px;
-    outline: none;
-    overflow: hidden;
-    padding: 9px 20px 8px;
-    position: relative;
-    text-align: center;
-    width: 100%;
-    color: #f1ede8;
-    text-decoration: none;
-}
-
-.back-button:hover,
-.back-button:focus {
-  opacity: .85;
 }

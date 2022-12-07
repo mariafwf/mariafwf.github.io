@@ -16,5 +16,11 @@ commit: all
 	rm $(MARKDOWN)
 	git add -A .
 	git commit -m 'Added entry $(MARKDOWN)'
-	mv $(HTML) /entries
+	
+DIR :=
+
+entry:
+	for file in ./entries ; do \
+		echo "Hello" $${file} ; \
+	done
 
