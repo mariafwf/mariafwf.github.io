@@ -5,6 +5,7 @@ HTML=$(MARKDOWN:.md=.html)
 .PHONY = all clean delete
 
 all: $(HTML)
+	mv $(HTML) .
 
 %.html: %.md
 	pandoc --from markdown --to html $< -o $@
