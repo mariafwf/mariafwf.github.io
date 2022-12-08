@@ -1,8 +1,8 @@
-MARKDOWN=$(shell find . -iname "*.md")
+MARKDOWN=$(shell find ../build -iname "*.md")
 
 HTML=$(MARKDOWN:.md=.html)
 
-.PHONY = all clean new
+.PHONY = all clean delete
 
 all: $(HTML)
 
@@ -12,13 +12,16 @@ all: $(HTML)
 clean:
 	rm $(HTML)
 
-commit: all
+BOOKTITLE = 
+
+add:
+ifdef title
+	echo "* [$(title) by $(author)](./$(file).html)" >> index.md
+else
+	echo "Usage: make title=<book title> author=<author name> file=<file name>""
+endif
+
+commit: all # delete
 #	rm $(MARKDOWN)
 	git add -A .
 	git commit -m 'Added $(basename $(MARKDOWN))'
-	
-NEWENTRY:=(<div class="entry"><a href="entries/littlelife.html"><span class="hyperspan"></span></a><span>A Little Life</span><br /><br /><span>by Hanya Yanagihara</span></div></div>)
-
-append:
-	NEWENTRY >> index.html
-
