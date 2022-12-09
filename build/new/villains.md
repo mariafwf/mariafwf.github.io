@@ -4,7 +4,7 @@
 </head>
 <body>
 
-# If We Were Villains by M. L. Rio ![](build/img/villains.jpeg)
+# If We Were Villains by M. L. Rio
 
 * “For someone who loved words as much as I did, it was amazing how often they failed me.”
 * “One thing I'm sure Colborne will never understand is that I need language to live, like food—lexemes and morphemes and morsels of meaning nourish me with the knowledge that, yes, there is a word for this. Someone else has felt it before.”

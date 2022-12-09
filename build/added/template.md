@@ -4,7 +4,7 @@
 </head>
 <body>
 
-# Book Title by Author ![](build/img/{file})
+# Book Title by Author
 
 * Quote 1
 * Quote 2

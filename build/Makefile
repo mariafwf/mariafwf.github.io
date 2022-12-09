@@ -17,7 +17,7 @@ ifdef title
 	mv index.html ../docs
 	mv $(MARKDOWN) ./added
 	git add ../docs
-	git commit -m 'Added $(title) by $(author)'
+	git commit -m 'Add $(title) by $(author)'
 else
 	echo "Usage: make title=<book title> author=<author name> file=<file name> add"
 endif

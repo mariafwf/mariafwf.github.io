@@ -12,3 +12,4 @@
 ## 50% book nerd, 50% CS nerd  
 
 
+* [Tuesdays with Morrie by Mitch Albom](./morrie.html)
