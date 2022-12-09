@@ -18,6 +18,7 @@ ifdef title
 	mv $(MARKDOWN) ./added
 	git add ../docs
 	git commit -m 'Add $(title) by $(author)'
+	git push origin master
 else
 	echo "Usage: make title=<book title> author=<author name> file=<file name> add"
 endif
